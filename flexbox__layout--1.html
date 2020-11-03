@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<style>
+
+   html, body {
+       height: 100vh;
+   }
+
+   body {
+       display: flex;
+       flex-direction: column;
+       padding: 0;
+       margin: 0;
+   }
+
+    /*Flex para Container MANIOPULAR SEUS FILHOS ========================================*/
+    #container {
+        background: orange;
+
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+
+
+        }
+
+    /*Flex para Items ========================================*/
+    .item {
+        background: blueviolet ; 
+        color: white;
+        padding: 1rem;
+        border: 1px solid white;
+         width:150px;
+        
+        }
+        .item--effect {
+            /* flex: 4; */
+
+        
+        }
+
+        #topbar {
+            background: yellow;
+        }
+
+        sidebar {
+            background: blue;
+            flex: 1;
+            
+        }
+
+        main {
+            background: #929090;
+            flex: 3;
+        }
+
+        
+
+        footer {
+            background: violet;
+
+        }
+
+        #content {
+            display: flex;
+            flex: 1;
+
+        }
+
+    /*=====================================================*/
+    
+
+
+</style>
+
+<body>
+    <div id="container">
+        <header id="topbar">TOP BAR</header>
+
+        <div id="content">
+            <sidebar>SIDEBAR</sidebar>
+            <main>MAIN</main>
+        </div>
+        
+        <footer>FOOTER</footer>
+        
+    </div>
+    
+</body>
+</html>

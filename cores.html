@@ -15,6 +15,7 @@
 
 
     /* CLARO OU ESCURO */ 
+    --tema_default: #f2f2f2;
     --light: #f2f2f2;
     --dark: #333;
 
@@ -56,10 +57,22 @@
   --opacity-level1:100%; /*no opacity - normal*/
   --opacity-level2:80%;
   --opacity-level3:60%;
-
-  
  
 }
+
+.bg__degrade--3color{
+  background: var(--color1-normal);
+background: linear-gradient(90deg, var(--color1-normal) 0%, var(--color2-normal) 35%, var(--color3-normal) 100%);
+}
+.bg__degrade--2color {
+  background: var(--color1-normal);
+background: linear-gradient(90deg, var(--color1-normal) 50%, var(--tema_default) 50%);
+}
+.bg__degrade--2color--effect {
+  background: var(--color1-normal);
+background: linear-gradient(45deg, var(--color1-normal) 50%, var(--tema_default) 50%);
+}
+
 body {
   display: flex;
 
@@ -70,7 +83,9 @@ body {
 .box1 { 
   width:70px; height:70px; text-align: center; align-items: center;
 }
-
+.box2{ 
+  width:100px; height:100px; text-align: center; align-items: center;
+}
 /* VARIAVEIS DISPONIVEIS ::
 
 color1 
@@ -131,6 +146,10 @@ normal
         </li>  
  
     </ul>
+
+    <div class="box2 bg__degrade--3color">Degrade Esfumaçado 3 cores</div>
+    <div class="box2 bg__degrade--2color ">Degrade 2 cores seca</div>
+    <div class="box2 bg__degrade--2color--effect">Degrade 2 cores seca</div>
 
     
     
