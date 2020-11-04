@@ -50,15 +50,11 @@ header {
 /* NAVTOP =====================================================*/
 
 #navtop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
 
 }
 .navtop--items {
-    display: flex;
-    gap: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: #a8ff07;
 }
@@ -108,8 +104,8 @@ nav ul  {
     <header>
         <div id="navtop">
 
-            <div class="navtop--items">SLOGAN</div>
             <div class="navtop--items">PESQUISA</div>
+            <div class="navtop--items">SLOGAN</div>
             <div class="navtop--items">SWITCH</div>
             <div class="navtop--items">CONTA</div>
 
